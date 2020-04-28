@@ -24,8 +24,66 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
 
     <style>
+
+        body {
+            background-image: radial-gradient( circle farthest-corner at 1.5% 2.8%,  rgba(69,237,244,1) 23.2%, rgba(26,243,158,1) 45%, rgba(241,78,163,1) 93.1% );
+        }
+        
+        .container{
+            width: 110%;
+        }
+
+        .jumbotron {
+            background-image:url(https://media.stubhubstatic.com/stubhub-catalog/d_defaultLogo.jpg/t_f-fs-0fv,q_auto:low,f_auto,c_fill,dpr_2.0,$w_750,$h_416/grouping/734664/5925e1459589f92598c1f906a5a79397);
+            background-size:cover;
+            background-repeat: no-repeat;
+         
+        }
+        .bonjovi{
+            background-color: thistle;
+        }
+
+        .btn-outline-success{
+            background-color:ivory;
+            color:black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position:initial;
+            width: 250px;
+        }
+    
+        .card {
+            padding: 15px;
+            margin : 50px;
+            size:5px;
+        }
+        .punk {
+            background-color:orange;
+            size: 80%
+            ;
+        }
+        .rock{
+            background-color: slategrey;
+        }
+        .card-group {
+            padding: 50px;
+        }
+        .row {
+            background-color:teal;
+            margin: 0px;;
+        }
+        footer {
+            background-color: white;
+        }
+    
+        
       /* EXERCISE 1
             For all Albums we'd like to have a consistent style.
             Create a class for:
@@ -43,8 +101,115 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
             to override bootstrap standard and make your website unique
          */
     </style>
+    
+
   </head>
   <body>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+      <div class="container">
+
+
+        <div class="row">
+            <div class="col-md-8">
+              <img class="img-fluid" src="https://images-na.ssl-images-amazon.com/images/I/814CzNdnldL._SL1422_.jpg" >
+            </div>
+    
+            <div class="col-md-4" id="project">
+                <h2> Favourite album</h2>
+              <h3 class="my-3">Forty Licks is a double compilation album by The Rolling Stones. </h3>
+              <p>
+                A 40-year career-spanning retrospective, Forty Licks is notable for being the first retrospective with
+                 their self-owned post-1970 material. Four new songs are included on the second disc.
+              </p>
+              <h3 class="my-3">Project Details</h3>
+              <ul>
+                <li>AllMusic	5/5 stars[1]</li>
+                <li>Entertainment Weekly	(A−)[2]</li>
+                <li>Jam! CANOE	(unfavourable)[3]</li>
+                <li>Rolling Stone	5/5 stars[4]</li>
+                <li>Stylus	(A+)[5]</li>
+                <li>Encyclopedia of Popular Music	5/5 stars[6]</li>
+              </ul>
+            </div>
+          </div>
+
+      <nav class="navbar sticky-top navbar-light bg-light">
+        <button class="btn btn-outline-success" type="button">Grunge</button>
+        <button class="btn btn-outline-success" type="button">Rock</button>
+        <button class="btn btn-outline-success" type="button">Punk</button>
+        <button class="btn btn-outline-success" type="button" data-scroll="#worst">Worst Album</button>
+    </nav>
+
+    <div class="rock">      
+
+      <div class="card-group" class="rock">
+        <div class="card" class="band">
+          <img src="https://cdn.shopify.com/s/files/1/0902/5612/products/bon_jovi_slippery_when_wet_vinyl_front_cover.JPG?v=1489293656" class="card-img-top" alt="...">
+          <div class="card-body" class="bonjovi">
+            <h5 class="card-title">Slippery when wet</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card" class="band">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81g%2BSqwTwLL._AC_SL1500_.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mothership</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card" class="band">
+          <img src="https://www.rayrecords.nl/wp-content/uploads/guns-n-Roses-Appetite-for-destruction.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Appetite for destruction</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="punk">
+
+      <div class="card-group">
+        <div class="card" class="band">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71pLD9e9jvL._AC_SL1500_.jpg" class="card-img-top" alt="...">
+          <div class="card-body" >
+            <h5 class="card-title">Wolves in wolves' clothing</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card" class="band">
+          <img src="https://static.lafeltrinelli.it/static/images-3/xxl/306/5623306.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Somewhere</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card" class="band">
+          <img src="https://img.discogs.com/LJ29iyHxN-CY2o2nSP4m7o6bAts=/fit-in/591x592/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-12821075-1543921152-5380.jpeg.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
     <!-- EXERCISE 3 
             Implement a navigation bar using the bootstrap component
             This navigation bar must be linked to every section in your page
@@ -73,8 +238,18 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
     <!-- EXERCISE 6
             Worst album list! Find out the music you don't really like or you find overrated and list it
             in this "hall of shame" chart!
+            
         -->
-
+        <div class="worstAlbum" id="worst"> 
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" style  ="background-color:black; color: white;" >Worst Albums</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      
     <!-- EXERCISE 7
             Do you have any musician / band you admire or you are fan of?
             This section is dedicated to him / her / them!
@@ -86,10 +261,94 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
             Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
             Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
         -->
+        <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Thumbnail Gallery</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+          </a>
+    </div>
+  </div>
+
+</div>
+    
 
     <!-- EXERCISE 9
             Implement a footer with some information / social links
         -->
+        <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 footer" >© Batch20 
+      <a href="https://www.strive.school/"> Strive</a>
+      <button type="button" class="btn btn-primary albumCounter" >
+        Number of album <span class="badge badge-light">4</span>
+      </button>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
     <!-- EXERCISE 10
             Every time the user clicks on a album picture, toggle the album details
@@ -103,5 +362,7 @@ Could be the Amazon way, the Spotity or Apple music way or some other blog out t
             EXERCISE 12
             Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
         -->
+
+    </div>
   </body>
 </html>
